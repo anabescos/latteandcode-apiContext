@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useToastContext from "../hooks/useToastContext";
 
-export default function Foo(){
+export default function Bar(){
     const addToast= useToastContext();
     const [text, setText] = useState ('');
     function handleTextChange(event){
@@ -10,10 +10,10 @@ export default function Foo(){
 
     return (
     <div>
-        <h2>Componente Foo</h2>
+        <h2>Componente Bar</h2>
         <div>
             <input value={text} onChange={handleTextChange}></input>
-            <button onClick={()=> addToast([text])}>Añadir Toast</button>
+            <button onClick={()=> addToast(text)}>Añadir Toast</button>
         </div>
         
     </div>

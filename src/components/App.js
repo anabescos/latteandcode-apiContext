@@ -2,6 +2,7 @@
 import React from "react";
 import "../stylesheets/App.scss";
 import Foo from "./Foo";
+import Bar from "./Bar";
 import { ToastContextProvider } from "../contexts/ToastContext";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <ToastContextProvider>
       <Foo/>
+      <Bar/>
     </ToastContextProvider>
   );
 }
